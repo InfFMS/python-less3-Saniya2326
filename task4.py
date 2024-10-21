@@ -6,6 +6,6 @@ a = 0
 
 while (x!=0):
     if x%5 ==0:
-        a+=1
+        a+=x
     x = int(input())
 print(a)

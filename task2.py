@@ -4,8 +4,11 @@
 
 x = int(input())
 a = 0
+b=0
 while (x!=0):
     if x>9 and x<100:
         a+=1
+    else:
+        b+=1
     x = int(input())
-print(a)
+print(a, b)
