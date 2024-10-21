@@ -3,3 +3,23 @@
 # которые являются степенями числа 2.
 # Вывести "нет", если таких чисел нет.
 
+
+def f(x):
+    while (x % 2 == 0):
+        x = x // 2
+    if(x == 1):
+        return True
+    return False
+
+x = int(input())
+s = 0
+c = 0
+while(x != 0):
+    if(f(x) == True):
+        s= s+ x
+        c = c + 1
+    x = int(input())
+if s == 0:
+    print("нет")
+else:
+    print(s / c)
